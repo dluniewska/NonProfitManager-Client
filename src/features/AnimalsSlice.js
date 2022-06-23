@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice, creteAsyncThunk } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import API from "../components/API/API";
 
 const initialState ={
