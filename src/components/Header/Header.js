@@ -1,16 +1,20 @@
 import React from 'react'
 import { Container, Navbar, NavDropdown, Nav } from 'react-bootstrap'
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  let navigate = useNavigate();
+
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">NonProfitManager</Navbar.Brand>
+        <Navbar.Brand onClick={() => navigate("/")}>NonProfitManager</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#">Transports</Nav.Link>
             <Nav.Link href="#">Polls</Nav.Link>
+            <Nav.Link onClick={() => navigate("/addAnimal")}>Add Animals</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link href="#">Settings</Nav.Link>

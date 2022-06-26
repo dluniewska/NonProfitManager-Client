@@ -3,7 +3,7 @@ import { Card, ListGroup } from 'react-bootstrap'
 
 const AnimalCard = (props) => {
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem' }} className='m-2'>
           <Card.Img variant="top" src="favicon.png" width="200px" />
           <Card.Body>
             <Card.Title>{props.animal.name}</Card.Title>
