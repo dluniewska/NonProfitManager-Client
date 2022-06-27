@@ -3,7 +3,7 @@ import { fetchAnimals } from '../../features/AnimalsSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import { CircularProgress } from '@mui/material'
 import { Row, Col } from 'react-bootstrap'
-import AnimalCard from './Card/AnimalCard'
+import AnimalCard from './AnimalCard/AnimalCard'
 
 const Cards = () => {
 

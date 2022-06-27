@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Cards from '../Cards/Cards'
+import Cards from '../Cards/AnimalCards'
 
 const Home = () => {
   return (

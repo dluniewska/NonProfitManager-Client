@@ -10,31 +10,36 @@ const AnimalForm = () => {
       <Form className='m-5'>
         <Row className="mb-3">
           <Form.Group as={Col} align="start" controlId="formName">
-            <Form.Label>Name</Form.Label>
+            <Form.Label>Nazwa</Form.Label>
             <Form.Control placeholder="Name" />
           </Form.Group>
 
           <Form.Group as={Col} align="start" controlId="formSpecies">
-            <Form.Label>Species</Form.Label>
+            <Form.Label>Gatunek</Form.Label>
             <Form.Control placeholder="Species" />
           </Form.Group>
         </Row>
 
         <Row className="mb-3">
         <Form.Group as={Col} align="start" controlId="formAge">
-            <Form.Label>Age</Form.Label>
+            <Form.Label>Wiek</Form.Label>
             <Form.Control placeholder="Age" />
           </Form.Group>
 
           <Form.Group as={Col} align="start" controlId="formQuantity">
-            <Form.Label>Quantity</Form.Label>
+            <Form.Label>Ilość</Form.Label>
             <Form.Control placeholder="Quantity" />
           </Form.Group>
         </Row>
 
         <Form.Group className="mb-3" align="start" controlId="formDetails">
-          <Form.Label>Details</Form.Label>
+          <Form.Label>Opis</Form.Label>
           <Form.Control as="textarea" placeholder="Details" />
+        </Form.Group>
+
+        <Form.Group controlId="formFileMultiple" className="mb-3" align="start">
+          <Form.Label>Zdjęcia</Form.Label>
+          <Form.Control type="file" multiple />
         </Form.Group>
 
         <div className="d-grid gap-2">
