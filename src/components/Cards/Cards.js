@@ -18,7 +18,7 @@ const Cards = () => {
     !animals.length ? <CircularProgress color="inherit" /> : (
       <Row xs={1} md={2} lg={3} xl={4} className="g-4 p-5">
       {animals.map((animal) => (
-        <Col>
+        <Col key={animal.animalId}>
           <AnimalCard animal={animal}/>
         </Col>
       ))}

@@ -1,0 +1,11 @@
+.animalCard {
+    height: auto;
+    width: 300;
+    overflow: 'hidden';
+  }
+  
+  .animalCardImg {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+  }

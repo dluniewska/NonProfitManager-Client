@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Card, ListGroup } from 'react-bootstrap'
+import API from '../../API/API';
+import "./AnimalCard.css"
 
 const AnimalCard = (props) => {
+
+  const [base64, setBase64] = useState();
+  let animalid = props.animal.animalId;
+
+  useEffect(() => {
+    API.get(`api/Photos/PhotoByAnimalId/${animalid}`)
+    .then(({data}) => {
+      setBase64(data.bytes);
+    })
+    .catch((error) => console.error(error));
+  }, []);
+
     return (
-        <Card style={{ width: '18rem' }} className='m-2'>
-          <Card.Img variant="top" src="favicon.png" width="200px" />
+        <Card style={{ width: '18rem' }} className='m-2 animalCard'>
+          <Card.Img variant="top" src={`data:image/png;base64,${base64}`} className='animalCardImg'/>
           <Card.Body>
             <Card.Title>{props.animal.name}</Card.Title>
             <Card.Text> {props.animal.age} </Card.Text>

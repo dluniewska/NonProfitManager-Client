@@ -7,7 +7,7 @@ import AnimalForm from './components/AnimalForm/AnimalForm'
 
 function App() {
   return (
-    <div className="App" fluid>
+    <div className="App">
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
