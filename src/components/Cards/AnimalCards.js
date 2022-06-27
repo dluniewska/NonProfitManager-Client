@@ -5,7 +5,7 @@ import { CircularProgress } from '@mui/material'
 import { Row, Col } from 'react-bootstrap'
 import AnimalCard from './AnimalCard/AnimalCard'
 
-const Cards = () => {
+const AnimalCards = () => {
 
     const dispatch = useDispatch();
     const animals = useSelector(state => state.Animals.animals);
@@ -27,4 +27,4 @@ const Cards = () => {
   );
 }
 
-export default Cards
+export default AnimalCards

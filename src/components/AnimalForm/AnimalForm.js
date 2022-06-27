@@ -5,18 +5,18 @@ const AnimalForm = () => {
   return (
     <Container className='p-5 mt-3'>
       <h1>
-        Add animals <Badge bg="success">New</Badge>
+        Dodaj zwierzęta <Badge bg="success">New</Badge>
       </h1>
       <Form className='m-5'>
         <Row className="mb-3">
           <Form.Group as={Col} align="start" controlId="formName">
             <Form.Label>Nazwa</Form.Label>
-            <Form.Control placeholder="Name" />
+            <Form.Control placeholder="Nazwa" />
           </Form.Group>
 
           <Form.Group as={Col} align="start" controlId="formSpecies">
             <Form.Label>Gatunek</Form.Label>
-            <Form.Control placeholder="Species" />
+            <Form.Control placeholder="Gatunek" />
           </Form.Group>
         </Row>
 
@@ -28,13 +28,13 @@ const AnimalForm = () => {
 
           <Form.Group as={Col} align="start" controlId="formQuantity">
             <Form.Label>Ilość</Form.Label>
-            <Form.Control placeholder="Quantity" />
+            <Form.Control placeholder="Ilość" />
           </Form.Group>
         </Row>
 
         <Form.Group className="mb-3" align="start" controlId="formDetails">
           <Form.Label>Opis</Form.Label>
-          <Form.Control as="textarea" placeholder="Details" />
+          <Form.Control as="textarea" placeholder="Opis" />
         </Form.Group>
 
         <Form.Group controlId="formFileMultiple" className="mb-3" align="start">
@@ -44,7 +44,7 @@ const AnimalForm = () => {
 
         <div className="d-grid gap-2">
           <Button variant="outline-success" type="submit" size="lg">
-            Save
+            Zapisz
           </Button>
         </div>
       </Form>

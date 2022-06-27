@@ -13,8 +13,8 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
           <NavDropdown title="Transporty">
-                <NavDropdown.Item href="#">Lista</NavDropdown.Item>
-                <NavDropdown.Item href="#">Dodaj transport</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => navigate("/transports")} >Lista</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => navigate("/addTransport")}>Dodaj transport</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#">
                   Zgłoszenia Użytkowników 

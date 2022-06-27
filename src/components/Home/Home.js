@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
-import Cards from '../Cards/AnimalCards'
+import React from 'react'
+import AnimalCards from '../Cards/AnimalCards'
 
 const Home = () => {
   return (
     <>
-      <Cards />
+      <AnimalCards />
     </>
   )
 }

@@ -14,7 +14,7 @@ const AnimalCard = (props) => {
       setBase64(data.bytes);
     })
     .catch((error) => console.error(error));
-  }, []);
+  }, [animalid]);
 
     return (
         <Card style={{ width: '18rem' }} className='m-2 animalCard'>
