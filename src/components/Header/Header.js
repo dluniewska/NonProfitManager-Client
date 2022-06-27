@@ -12,12 +12,26 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#">Transports</Nav.Link>
-            <Nav.Link href="#">Polls</Nav.Link>
-            <Nav.Link onClick={() => navigate("/addAnimal")}>Add Animals</Nav.Link>
+          <NavDropdown title="Transporty">
+                <NavDropdown.Item href="#">Lista</NavDropdown.Item>
+                <NavDropdown.Item href="#">Dodaj transport</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#">
+                  Zgłoszenia Użytkowników 
+                </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Ankiety">
+                <NavDropdown.Item href="#">Lista</NavDropdown.Item>
+                <NavDropdown.Item href="#">Dodaj ankietę</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#">
+                  Ankiety Użytkowników 
+                </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link onClick={() => navigate("/addAnimal")}>Dodaj Zwierzęta</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#">Settings</Nav.Link>
+            <Nav.Link href="#">Ustawienia</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

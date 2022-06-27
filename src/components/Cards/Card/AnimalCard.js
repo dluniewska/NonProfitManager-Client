@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Card, ListGroup } from 'react-bootstrap'
+import { Card, ListGroup, Button } from 'react-bootstrap'
 import API from '../../API/API';
 import "./AnimalCard.css"
 
@@ -29,8 +29,8 @@ const AnimalCard = (props) => {
             <ListGroup.Item>{props.animal.quantity}</ListGroup.Item>
           </ListGroup>
           <Card.Body>
-            <Card.Link href="#">Delete</Card.Link>
-            <Card.Link href="#">Edit</Card.Link>
+            <Button href="#" variant="outline-warning" className='m-2'>Edit</Button>
+            <Button href="#" variant="outline-danger" className='m-2'>Delete</Button>
           </Card.Body>
         </Card>
       );
